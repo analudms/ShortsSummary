@@ -4,15 +4,14 @@ import express from 'express' //error
 
 import { convert } from "./convert.js"
 import { download } from "./download.js"
-import { transcribe } from './transcribe.js'
-import { summarize } from './summarize.js'
-
+import { transcribe } from "./transcribe.js"
+import { summarize } from "./summarize.js" 
 //criando constante para utilizar as bibliotecas
 const app = express()
 app.use(express.json())
 app.use(cors())
 
-//passando uma ação a ser recebida e devolvendo uma resposta
+//recupera o id, faz download do vídeo e converte o video em audio
 app.get("/summary/:id", async (request, response) => {
     try {
     await download(request.params.id)

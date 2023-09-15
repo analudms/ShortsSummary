@@ -3,7 +3,8 @@ import {server} from "./server.js"
 const form = document.querySelector("#form")
 const input = document.querySelector("#url")
 const content = document.querySelector("#content")
-
+ 
+//função que observa quando o botão é clicado
 form.addEventListener("submit",async (event) => {
     event.preventDefault() //não recarregar a página
     content.classList.add("placeholder")
