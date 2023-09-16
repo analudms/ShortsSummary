@@ -13,7 +13,7 @@
 
 <h2 style= "color:slateBlue">Como acessar o projeto? 🤔<h2>
    
-   Basta clicar [AQUI](https://shorts-summary-seven.vercel.app/) que     você será direcionado!
+   Basta clicar [AQUI](https://shorts-summary-three.vercel.app/) que     você será direcionado!
    
 
 <h2 style= "color:slateBlue"> Tecnologias utilizadas Front-end 💻 <h2>
