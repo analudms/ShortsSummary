@@ -4,9 +4,11 @@ import fs from "fs"
 
 //exportando função para usar em outro arquivo
 export const download = (videoId) =>
+  console.log("chegou na funcao download o videoID:", videoId)
+
   new Promise((resolve, reject) => {
     //prometendo a quem fez uma solicitação retornar uma resposta, positiva ou negativa
-    const videoURL = "https://youtube.com/shorts/" + videoId
+    const videoURL = `https://youtube.com/shorts/${videoId}`
     console.log("realizando o download:", videoId)
 
     //definindo qualidade a serem baixadas
